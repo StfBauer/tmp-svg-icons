@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "htwootester-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/htwootester/HtwootesterWebPart.js",
+          "manifest": "./src/webparts/htwootester/HtwootesterWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "@n8d/htwoo-react": "http://localhost:3000/htwooreact.js"
+  },
+  "localizedResources": {
+    "HtwootesterWebPartStrings": "lib/webparts/htwootester/loc/{locale}.js"
+  }
+}
